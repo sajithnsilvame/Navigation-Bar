@@ -1,0 +1,92 @@
+/* base rule */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c757d;
+}
+
+body{
+    background: #000;
+}
+
+/* Navigation */
+
+nav .r-nav{
+   background: transparent;
+   padding: 20px 0;
+   transition: 0.5s all;
+}
+
+nav .navbar-brand{
+    font-size: 30px;
+    color: #fff;
+}
+
+nav .navbar-nav li a{
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media(max-width: 991px){
+    nav .navbar-nav li a{
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    nav.stickyAdd .fa-bars{
+        color: #000;
+    }
+    .nav-link:hover{
+        background-color: rgb(29, 108, 212);
+        padding: 3px;
+        border-radius: 5px;
+        
+    }
+
+}
+
+nav .navbar-nav li{
+    margin-left: 15px;
+}
+
+nav span i.fa-bars{
+     color: #fff;
+     
+}
+
+.nav-link:hover{
+    background-color: rgb(29, 108, 212);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+nav.r-nav.stickyAdd{
+     background: #fff !important;
+     padding: 15px 0;
+     box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+     transition: 0.5s all ease-in-out;
+}
+
+nav.stickyAdd .navbar-brand{
+    color: #000;
+    font-size: 40px;
+    transition: .5s all;
+}
+
+nav.stickyAdd .navbar-nav .nav-link{
+    color: #000 !important;
+}
